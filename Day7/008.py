@@ -19,3 +19,13 @@ def 덧셈(a: int | float, b: int | float):
 
 
 덧셈(9.5, 10)
+
+def hap2(a:int|float,b:int|float):
+    #return 결과 -> 함수를 종료하고 결과로 바꿔라
+    return a+b
+
+hap2(3,4)
+
+result = hap2(3,4)
+
+print(result)
