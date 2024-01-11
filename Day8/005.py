@@ -33,7 +33,7 @@ for z in range(1,101):
         if z%5 == 0 and z%7 == 0:
             continue
         else:
-            print(z)
+            print(z,end=" ")
 
 
 
