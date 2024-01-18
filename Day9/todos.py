@@ -8,7 +8,7 @@ print(todos)
 
 def menu():
     print('할일관리')
-    print('1. 할일 목록\n2.할일 추가\n3.할일 변경\n4.삭제\n999.종료')
+    print('1. 할일 목록\n2.할일 추가\n3.할일 변경\n4.삭제\n5. 완료율\n999.종료')
 
 
 def print_list():
@@ -58,8 +58,8 @@ def delete_list():
                 del todos[update_user-1]
                 print('삭제가 완료 되었습니다.')
             if item['tno'] > update_user:
-                for del_list in todos:
-                    del_list['tno'] = del_list['tno']-1
+                for optimization_list in todos:
+                    optimization_list['tno'] = optimization_list['tno']-1
                 print_list()
     else:
         print('잘못입력하셨습니다. 다시시도해주세요')
@@ -76,6 +76,10 @@ while True:
         update_list()
     elif select == 4:
         delete_list()
+    elif select == 5:
+        avg_todos()
     elif select == 999:
         print('종료합니다.')
         break
+    else:
+        print('잘못입력하셨습니다. 다시입력해주세요')
